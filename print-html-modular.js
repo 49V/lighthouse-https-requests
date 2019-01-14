@@ -9,11 +9,11 @@ function getAndPrintHTML(requestOptions) {
 
     response.on('data', function(data) {
       message += data;
-    })
+    });
 
     response.on('end', function() {
       console.log(message);
-    })
+    });
   });
 
   return;
